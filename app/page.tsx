@@ -24,7 +24,7 @@ export default function Page() {
           property="og:image"
           content="https://edlgn2sd.netlify.app/cookie.jpg"
         />
-        <meta property="og:url" content="https://edlgn2sd.netlify.app" />
+        <meta property="og:url" content="https://edlgn2sd.netlify.app/frames" />
         <meta property="og:type" content="website" />
       </Head>
       <span>See my Warpcast frame</span>
