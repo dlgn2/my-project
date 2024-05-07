@@ -1,4 +1,5 @@
 import { fetchMetadata } from "frames.js/next";
+import Head from "next/head";
 
 export async function generateMetadata() {
   return {
@@ -10,5 +11,23 @@ export async function generateMetadata() {
 }
 
 export default function Page() {
-  return <span>See my Warpcast frame</span>;
+  return (
+    <>
+      <Head>
+        <title>My Frame Page</title>
+        <meta property="og:title" content="My Interactive Frame" />
+        <meta
+          property="og:description"
+          content="Description of what your frame does."
+        />
+        <meta
+          property="og:image"
+          content="https://edlgn2sd.netlify.app/cookie.jpg"
+        />
+        <meta property="og:url" content="https://edlgn2sd.netlify.app" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <span>See my Warpcast frame</span>
+    </>
+  );
 }
